@@ -26,7 +26,7 @@
     <actions>
         <action
                 id="YandexSearch.Editor"
-                class="com.kklimacheva.plugins.yandex.SearchYandex"
+                class="com.kklimacheva.plugins.yandex.SearchYandexAction"
                 text="Search on Yandex"
                 description="Search on Yandex">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
@@ -34,11 +34,18 @@
         </action>
         <action
                 id="YandexSearch.Console"
-                class="com.kklimacheva.plugins.yandex.SearchYandex"
+                class="com.kklimacheva.plugins.yandex.SearchYandexAction"
                 text="Search on Yandex"
                 description="Search on Yandex">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="alt Y"/>
+        </action>
+        <action
+                id="com.kklimacheva.plugins.yandex.TranslateYandexAction"
+                class="com.kklimacheva.plugins.yandex.TranslateYandexAction"
+                text="Translate with Yandex"
+                description="Translate with Yandex">
+            <keyboard-shortcut keymap="$default" first-keystroke="alt T"/>
         </action>
     </actions>
 </idea-plugin>
